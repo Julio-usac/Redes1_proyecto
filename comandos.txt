@@ -33,7 +33,7 @@ Se utilizaron los siguientes comandos para configurar los etherswitch router:
   ~~~
   vtp domain "nombre" // Se configura el nombre del dominio
   vtp password "contraseña" // Se configura la contraseña
-  vtp mode client //Se cambia a modo cliente
+  vtp mode client //Se cambia a modo cliente, Server para servidor
   end
   ~~~
 6. Se utlizaron los siguientes comandos para guardar los cambios en el Etherswitch router:
@@ -45,7 +45,7 @@ Se utilizaron los siguientes comandos para configurar los etherswitch router:
 Se utilizaron los siguientes comandos para configurar las VPC:
 1. Se utlizo el siguiente comando para configurar el dhcp:
   ~~~
-  "ip dhcp"
+  ip dhcp
   ~~~
 2. Se utlizo el siguiente comando para guardar los cambios:
   ~~~
@@ -98,4 +98,21 @@ Se utilizaron los siguientes comandos para configurar las VPC:
   ip address [ip] [mascara_de_subred]
   vrrp # ip [ip_virtual]
   vrrp # priority [num]
+  ~~~
+
+
+Se utilizaron los siguientes comandos para configurar el router:
+
+1.Se utilizaron los siguientes comandos para la subinterfaz y su direccion:
+  ~~~
+  int f#/#.## //colocar interfaz #/# y sub .##
+  encapsulation dot1q ## //colocar vlan
+  ip address "tu direccion" //Colocar la direccion
+
+2.e utilizaron los siguientes comandos para configurar el dhcp:
+  ~~~
+  int f#/#.## //colocar interfaz #/# y sub .##
+  ip dhcp pool "vlan nombre" 
+  network "direccion" "mascara" 
+  default-route "direccion"
   ~~~
