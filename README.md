@@ -1,4 +1,50 @@
 # Manual de construccion y configuracion
+
+## Topología 1
+Pasos para configurar la topología 1
+Componentes a utilizar:
+- 5 Router Cisco C3725
+- 2 Etherswitch
+- 4 Cloud
+
+Conexiones de la topología:
+
+<p align="center">
+  <img src="img/topo1.png" width="600">
+</p>
+
+### Configuración en R6:
+
+Se puede obserbar el protopolo RIP activado y el VRRP.
+
+<p align="center">
+  <img src="img/topo11.png" width="600">
+</p>
+
+### Configuración en R3:
+
+Se puede obserbar el protopolo RIP activado y el VRRP.
+
+<p align="center">
+  <img src="img/topo12.png" width="600">
+</p>
+
+### Configuración en R7:
+
+Se puede obserbar el protopolo RIP activado y el HSRP.
+
+<p align="center">
+  <img src="img/topo13.png" width="600">
+</p>
+
+### Configuración en R5:
+
+Se puede obserbar el protopolo RIP activado y el HSRP.
+
+<p align="center">
+  <img src="img/topo14.png" width="600">
+</p>
+
 ## Topología 2
 La topología 2 es la encargada de distribuir y repartir las VLANS hacia las demás topologías, es el Cuarto de telecomunciaciones
 ### Configuración de la topología de red:
