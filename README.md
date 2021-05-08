@@ -37,8 +37,23 @@ Se configuraron las siguientes vlan en el ESW1:
 </p>
 
 ### Configuracion otros ESW:
+
 Podemos ver que los portchannels están configurados y las conexiones a los oros ESW con el comando sh int trunk.
 
 <p align="center">
   <img src="img/trunkotro.png" width="600">
 </p>
+
+
+<p align="center">
+  <img src="img/trunkotro2.png" width="600">
+</p>
+
+Todos los ESW fueron configurados en modo cliente a excepcion del ESW1 que es modo servidor, podemos ver esto con el sh vtp status:
+
+<p align="center">
+  <img src="img/vtpotro.png" width="600">
+</p>
+
+
+
