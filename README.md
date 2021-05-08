@@ -55,5 +55,52 @@ Todos los ESW fueron configurados en modo cliente a excepcion del ESW1 que es mo
   <img src="img/vtpotro.png" width="600">
 </p>
 
+## Topología 3
+La topología 3 es la encargada de administrar los servidores de las unidades departamentales.
+### Configuración de la topología de red
+Componentes a utilizar:
+- 1 Etherswitch Router
+- 2 Cloud
+- 1 switch
+- 1 router
+- 4 maquinas virtuales
+- 2 vpc
 
+Conexiones de la topologia:
 
+<p align="center">
+  <img src="img/topo3.png" width="600">
+</p>
+
+Para iniciar se configuraron las interfases en modo access.
+<p align="center">
+  <img src="img/topo31.png" width="600">
+</p>
+
+<p align="center">
+  <img src="img/topo32.png" width="600">
+
+Luego se procedió a configurar el router, realizando el encapsulamiento de las subredes.
+</p><p align="center">
+  <img src="img/topo33.png" width="600">
+</p><p align="center">
+  <img src="img/topo34.png" width="600">
+
+Y por ultimo se configuro el dhcp para poder generar las ip automaticamente para cada dispositivo
+</p><p align="center">
+  <img src="img/topo35.png" width="600">
+</p>
+
+Para poder tener conexión entre la base de datos y las paginas web de cada uno de los departamentos:
+
+</p><p align="center">
+  <img src="img/topo36.png" width="600">
+</p>
+
+</p><p align="center">
+  <img src="img/topo37.png" width="600">
+</p>
+
+</p><p align="center">
+  <img src="img/topo38.png" width="600">
+</p>
