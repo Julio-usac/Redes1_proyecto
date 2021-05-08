@@ -15,3 +15,30 @@ Conexiones de la topologia:
 <p align="center">
   <img src="img/topo2.png" width="600">
 </p>
+
+### Configuración del ESW1:
+
+Podemos ver que los portchannels están configurados y la interface que se conecta a la nube en el ESW1 con el comando sh int trunk.
+
+<p align="center">
+  <img src="img/trunkesw1.png" width="600">
+</p>
+
+Además el ESW1 es el que se configura en modo servidor y por lo tanto el encargado de suministrarle las VLANS creadas en este hacia los demas switchs, miramos esto con el comando sh vtp status
+
+<p align="center">
+  <img src="img/vtpesw1.png" width="600">
+</p>
+
+Se configuraron las siguientes vlan en el ESW1:
+
+<p align="center">
+  <img src="img/vlanesw1.png" width="600">
+</p>
+
+### Configuracion otros ESW:
+Podemos ver que los portchannels están configurados y las conexiones a los oros ESW con el comando sh int trunk.
+
+<p align="center">
+  <img src="img/trunkotro.png" width="600">
+</p>
