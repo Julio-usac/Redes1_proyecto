@@ -55,5 +55,10 @@ Todos los ESW fueron configurados en modo cliente a excepcion del ESW1 que es mo
   <img src="img/vtpotro.png" width="600">
 </p>
 
+Al ser clientes, los ESW obtienen las vlan del ESW1 que es modo servidor, podemos ver esto con sh vlan-sw:
+
+<p align="center">
+  <img src="img/vlanotro.png" width="600">
+</p>
 
 
