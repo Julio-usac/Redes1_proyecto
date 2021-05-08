@@ -50,3 +50,52 @@ Se utilizaron los siguientes comandos para configurar las VPC:
 2. Se utlizo el siguiente comando para guardar los cambios:
   ~~~
   save
+  
+  Se utilizaron los siguientes comandos para configurar los Router C3725:
+1. Se utlizaron los siguientes comandos para configurar el protocolo RIP:
+  ~~~
+  router rip
+  network [direccion_de_red_conectada_directamente]
+  ~~~
+2. Se utlizaron los siguientes comandos para configurar el protocolo RIP V2:
+  ~~~
+  router rip
+  version 2
+  network [direccion_de_red_conectada_directamente]
+  ~~~
+  
+3. Se utlizaron los siguientes comandos para configurar el protocolo HSRP en modo activo:
+  ~~~
+  Interface f#/#
+  No shutdown
+  standby # ip # [ip_virtual]
+  standby # priority [num]
+  standby preempt
+  ~~~
+  
+4. Se utlizaron los siguientes comandos para configurar el protocolo HSRP en modo espera:
+  ~~~
+  Interface f#/#
+  No shutdown
+  standby # ip # [ip_virtual]
+  standby # priority [num]
+  ~~~
+  
+5. Se utlizaron los siguientes comandos para configurar el protocolo VRRP en modo master:
+  ~~~
+  Interface f#/#
+  No shutdown
+  ip address [ip] [mascara_de_subred]
+  vrrp # ip [ip_virtual]
+  vrrp # priority [num]
+  vrrp # preempt
+  ~~~
+  
+6. Se utlizaron los siguientes comandos para configurar el protocolo HSRP en modo backup:
+  ~~~
+  Interface f#/#
+  No shutdown
+  ip address [ip] [mascara_de_subred]
+  vrrp # ip [ip_virtual]
+  vrrp # priority [num]
+  ~~~
